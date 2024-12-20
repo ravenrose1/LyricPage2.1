@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>double take - Dhruv</title>
+
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="c.jpg" type="image/x-jpg">
+
+    <!-- Internal CSS for styling -->
+    <style>
+        /* General body styling */
+        body {
+            margin: 0; /* Removes default margins */
+            font-family: "Parkinsans", sans-serif; /* Applies Google Font */
+            font-weight: 500;
+            font-style: normal;
+            background-color: #0b0a0aed; /* Dark background for modern look */
+            color: #fff; /* White text for contrast */
+            display: flex; /* Flexbox layout for the main container */
+            flex-direction: column; /* Column layout */
+            height: 100vh; /* Full viewport height */
+        }
+
+        /* Main container styling */
+        #container {
+            display: flex; /* Flex layout for sidebar and main content */
+            flex: 1; /* Makes the container fill available space */
+        }
+
+        /* Sidebar styling */
+        #sidebar {
+            width: 25%; /* Sidebar occupies 25% of the width */
+            background-color: #032614; /* Slightly lighter dark background */
+            padding: 20px; /* Adds space inside the sidebar */
+            text-align: center; /* Centers text content */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5); /* Adds shadow for separation */
+            display: flex; /* Flex layout for vertical alignment */
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+
+        /* Main content area */
+        #main {
+            flex: 1; /* Occupies remaining space */
+            padding: 40px; /* Adds padding around content */
+            overflow-y: auto; /* Enables vertical scrolling if needed */
+            position: relative; /* Allows positioning of video and lyrics */
+            overflow: hidden; /* Hides any overflowing elements */
+        }
+
+        /* Video background styling */
+        .background-video {
+            position: absolute; /* Positions video behind content */
+            top: 0;
+            left: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            object-fit: cover; /* Ensures video covers the area */
+            object-position: center 20%; /* Adjusts focus area of the video */
+            z-index: -1; /* Sends the video behind other elements */
+            opacity: 0.5; /* Adds transparency to the video */
+        }
+
+        /* Lyrics container styling */
+        #lyrics {
+            position: relative; /* Allows stacking on top of the video */
+            z-index: 1; /* Ensures lyrics are above the video */
+            max-width: 800px; /* Limits width for better readability */
+            margin: 0 auto; /* Centers the lyrics block */
+            text-align: center; /* Centers text inside the block */
+            color: rgb(63, 235, 121);
+        }
+
+        /* Headings styling */
+        h1 {
+            font-size: 2.5em; /* Large font size for main heading */
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 1.5em; /* Medium font size for subheading */
+            margin: 10px 0;
+            color: #fdfcfc; /* Lighter gray for subtle emphasis */
+        }
+
+        /* Paragraph text styling */
+        p {
+            margin: 10px 0; /* Adds space between lines */
+            line-height: 1.8; /* Increases line spacing for readability */
+            font-size: 1.2em; /* Slightly larger font size */
+        }
+
+        /* Highlight class for special text */
+        .highlight {
+            color: #1db954; /* Spotify green color */
+            font-weight: bold;
+        }
+
+        /* Song image styling */
+        #song-image {
+            width: 100%; /* Makes the image responsive */
+            max-width: 200px; /* Restricts max size */
+            border-radius: 12px; /* Adds rounded corners */
+            margin-bottom: 20px; /* Adds space below the image */
+        }
+
+        /* Sidebar text styling */
+        #sidebar h2 {
+            margin-top: 15px;
+            font-size: 1.2em;
+        }
+
+        #sidebar p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background audio (YouTube video) -->
+    <iframe width="0" height="0"
+        src="https://youtu.be/L4SoJzhaOj4?si=u7ev5oOHemiHEULK"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+    </iframe>
+    <!-- Main container -->
+    <div id="container">
+        <!-- Sidebar with song details -->
+        <div id="sidebar">
+            <img id="song-image" src="joshua.jpg" alt="Buzz Album Cover">
+            <h2>Now Playing</h2>
+            <p>Artist: Joshua Hong</p>
+            <p>Song: double take</p>
+            <p>Cover</p>   
+        </div>
+        <!-- Main content with lyrics -->
+        <div id="main">
+            <!-- Background video -->
+            <video autoplay muted loop class="background-video">
+                <source src="ssstik.io_@4eversaythename_1733801190443 - Copy.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Lyrics section -->
+            <div id="lyrics">
+                <h1>double take</h1>
+                <h2>Dhruv</h2>
+                <p>double take</p>
+                <p>I could say I never dare</p>
+                <p>To think about you in that way, but</p>
+                <p>I would be lyin'</p>
+                <p>And I pretend I'm happy for you</p>
+                <p>When you find some dude to take home</p>
+                <p>But I won't deny that</p>
+        
+                <p>In the midst of the crowds</p>
+                <p>In the shapes in the clouds</p>
+                <p>I don't see nobody but you</p>
+                <p>In my rose-tinted dreams</p>
+
+                <p>Wrinkled silk on my sheets</p>
+                <p>I don't see nobody but you</p>
+                <p>Boy, you got me hooked onto something</p>
+                <p>Who could say that they saw us coming?</p>
+                <p>Tell me</p>
+                <p>Do you feel the love?</p>
+                <p>Spend a summer or a lifetime with me</p>
+                <p>Let me take you to the place of your dreams</p>
+                <p>Tell me</p>
+                <p>Do you feel the love?</p>
+                <p>And I could say I never unzipped</p>
+                <p>Those blue Levi's inside my head</p>
+
+                <p>Don't know what's come over me/p>
+                <p>It seems like yesterday when I said</p>
+                <p>"We'll be friends forever"</p>
+                <p>Constellations of stars</p>
+                <p>Murals on city walls</p>
+                <p>I don't see nobody but you</p>
+                <p>You're my vice, you're my muse</p>
+                <p>You're a nineteenth floor view</p>
+                <p>I don't see nobody but you</p>
+                <p>Boy, you got me hooked onto something</p>
+                <p>Who could say that they saw us coming?</p>
+                <p>Tell me</p>
+                <p>Do you feel the love?</p>
+                <p>Spend a summer or a lifetime with me
+                <p>Let me take you to the place of your dreams
+                <p>Tell me</p>
+                <p>Do you feel the love?
+                <p>Boy, you got me hooked onto something</p>
+                <p>Who could say that they saw us coming?</p>
+                <p>Tell me</p>
+                <p>Do you feel the love?</p>
+                <p>Spend a summer or a lifetime with me
+                <p>Let me take you to the place of your dreams
+                <p>Tell me</p>
+                <p>Do you feel the love?
+                <p>Do you feel the love?</p>
+                <p>Do you feel the love?</p>
+                <p>Do you feel the love?</p>
+                <p>Do you feel the love?</p>
+                <p>Feel the love</p>
+                <p>Do you feel the love?</p>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
